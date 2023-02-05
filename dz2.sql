@@ -34,6 +34,7 @@ primary key(id_singers, id_albums)
 create table if not exists tracks (
 id_tracks serial primary key,
 duration varchar(60) not null,
+name_track varchar(60) not null,
 id_albums int2 references albums(id_albums)
 );
 
